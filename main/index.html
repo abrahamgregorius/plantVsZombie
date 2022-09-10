@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 1000 x 600 -->
+  <div class="app">
+    <div class="flex" style="display: none;">
+
+      <div class="main-menu">
+        <div class="logo">
+          <img src="./../MODULE_CLIENT_MEDIA/Sprites/General/logo.png" alt="">
+        </div>
+        <div class="form">
+            <input class="input" type="text" id="username" placeholder="Username">
+            
+            <select class="input" name="level" id="level">
+              <option value="">select level</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+    
+            <div class="buttons">
+              <button id="play">Play game</button>
+              <button id="instruction">Instruction</button>
+            </div>
+          </div>
+
+    </div>
+
+
+
+      <div class="instruction">
+        <h1>How to play Game</h1>
+        <ol>
+          <li>Input username</li>
+          <li>Take the sun to choose the plant card</li>
+          <li>Put a plant card into the field to fight a zombie</li>
+          <li>Don't let zombie pass through the yard</li>
+          <li>Enjoy!</li>
+        </ol>
+      </div>
+    </div>
+    <canvas id="canvas" width="800px" height="600px"></canvas>
+  </div>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
